@@ -12,7 +12,7 @@ module.exports = (app)=> {
         }
     })
 
-    app.post('/nuevolibro', async (req,res)=>{
+    app.post('/libros', async (req,res)=>{
         let libro = req.body
         console.log(libro)
         try {

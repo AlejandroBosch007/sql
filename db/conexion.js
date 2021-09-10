@@ -17,5 +17,6 @@ const sequelize = new Sequelize('libros', null, null, {
   }
 })
 
+
 module.exports = sequelize;
 

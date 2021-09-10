@@ -2,7 +2,7 @@ const sequelize = require('../db/conexion')
 
 module.exports.listarLibros = async ()=> {
     try {
-        let resultado = await sequelize.query('SELECT * FROM dbo.libros');
+        let resultado = await sequelize.query('SELECT * FROM libros');
         console.log(resultado)
         return resultado;
     }catch (error) {
