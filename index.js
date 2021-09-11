@@ -6,6 +6,7 @@ const sequelize = require('./db/conexion');
 const librosRoute = require('./routes/libros.routes')
 const autorRoutes = require('./routes/autor.routes')
 
+
 //Middlewares globales
 app.use(express.json())
 

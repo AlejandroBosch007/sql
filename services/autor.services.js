@@ -5,6 +5,7 @@ module.exports.nuevoAutor = async (autor)=> {
     try {
         let resultado = await sequelize.query(`INSERT INTO autor (nombres , apellidos) VALUES (?,?)`,
         {replacements: autor, type: sequelize.QueryTypes.SELECT});
+        
         console.log(resultado)
         return 'Alta de autor correctamente'
         

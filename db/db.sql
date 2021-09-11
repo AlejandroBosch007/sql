@@ -1,5 +1,3 @@
-
-
 CREATE DATABASE libros
 GO
 
