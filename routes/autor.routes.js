@@ -13,7 +13,7 @@ module.exports = (app)=> {
     app.post('/autor', async (req,res)=>{
         let autor = req.body
         try {
-            let resultado = await librosServices.nuevoAutor(autor)
+            let resultado = await autorServices.nuevoAutor(autor)
             console.log(resultado)
             res.json(resultado)
         }catch (err){

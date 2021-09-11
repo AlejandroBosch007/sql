@@ -7,6 +7,7 @@ module.exports.nuevoAutor = async (autor)=> {
         {replacements: autor, type: sequelize.QueryTypes.SELECT});
         console.log(resultado)
         return 'Alta de autor correctamente'
+        
     }catch (error) {
         console.log(error)
         throw new Error ("Ocurrio un error en la consulta");
